@@ -115,7 +115,6 @@ class Department:
     @classmethod
     def instance_from_db(cls, row):
         """Return a Department object having the attribute values from the table row."""
-
         # Check the dictionary for an existing instance using the row's primary key
         department = cls.all.get(row[0])
         if department:
